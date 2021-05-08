@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color:white;
+    
+}
 .inicio {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 0.3fr;
@@ -8,19 +15,37 @@
     
 .juego { 
     grid-area: 1 / 1 / 5 / 3; 
-    background-image:url('img_girl.jpg');}
-.lista-palabras { 
+    height: 700px;
+    border-bottom:12px solid #040c1c;
+    background-color:#040c1c;
+    background-image:url('../img/fondo.jpg');
+    }
+.lista_palabras { 
     grid-area: 1 / 3 / 5 / 4; 
-    background-color: blueviolet;}
+    background-color:#040c1c;}
 .informacion_juego { 
     grid-area: 5 / 1 / 6 / 4; 
-    background-color: brown;
+    height: 100px;
+    background-color: #040c1c;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 0.3fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;}
-   
+    grid-row-gap: 0px;
+}
+.palabra{ 
+    color: #333;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
 .vidas { grid-area: 1 / 1 / 2 / 2; }
-.texto { grid-area: 1 / 2 / 2 / 3; }
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 2 / 2 / 3; }
 .puntos { grid-area: 1 / 3 / 2 / 4; }
