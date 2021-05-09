@@ -10,15 +10,43 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
+    <section id=" pantalla_inicio" class="oculto">
+        <div class="inicio">
+            <div id="juego" class="juego">
+                <div id="cada_palabra" class="cada_palabra"> INICIO</div>
+            </div>
+            <div id="informacion_juego" class="informacion_juego">
+                <div id="vidas" class="vidas"><span id="numero_vidas" class="numero_vidas">vidas=3</span> </div>
+                <div id="texto" class="texto"></div>
+                <div class="puntos"><span id="puntos" class="puntos">puntos=0</span> </div>    
+            </div>
+            </div>
+        </section>
+    <section id="pantalla_juego" class="oculto">
     <div class="inicio">
-        <div id="juego" class="juego"> </div>
+        <div id="juego" class="juego">
+            <div id="cada_palabra" class="cada_palabra"></div>
+        </div>
         <div id="informacion_juego" class="informacion_juego">
-            <div id="lista_palabras" class="vidas"><span id="vidas" class="vidas">vidas=3</span> </div>
+            <div id="vidas" class="vidas"><span id="numero_vidas" class="numero_vidas">vidas=3</span> </div>
             <div id="texto" class="texto">
                 <input type="text" class = "palabra"id="palabra" name="palabra" required>  
             </div>
             <div class="puntos"><span id="puntos" class="puntos">puntos=0</span> </div>    
         </div>
         </div>
+    </section>
+    <section id="pantalla_derrota  " class="">
+        <div class="inicio">
+            <div id="juego" class="juego">
+                <div id="cada_palabra" class="cada_palabra">DERROTA</div>
+            </div>
+            <div id="informacion_juego" class="informacion_juego">
+                <div id="vidas" class="vidas"><span id="numero_vidas" class="numero_vidas">vidas=3</span> </div>
+                <div id="texto" class="texto"></div>
+                <div class="puntos"><span id="puntos" class="puntos">puntos=0</span> </div>    
+            </div>
+            </div>
+        </section>
 </body>
 </html>

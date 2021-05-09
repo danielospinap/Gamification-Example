@@ -23,6 +23,10 @@
     color:white;
     font-family: "Roboto Slab", serif;
 }
+.oculto {
+    display: none;
+}
+
 .inicio {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 0.3fr;
