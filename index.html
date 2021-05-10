@@ -6,26 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamificacion</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
-    <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
-    <section id=" pantalla_inicio" class="oculto">
-        <div class="inicio">
-            <div id="juego" class="juego">
-                <div id="cada_palabra" class="cada_palabra"> INICIO</div>
-            </div>
-            <div id="informacion_juego" class="informacion_juego">
-                <div id="vidas" class="vidas"><span id="numero_vidas" class="numero_vidas">vidas=3</span> </div>
-                <div id="texto" class="texto"></div>
-                <div class="puntos"><span id="puntos" class="puntos">puntos=0</span> </div>    
-            </div>
-            </div>
-        </section>
-    <section id="pantalla_juego" class="oculto">
+    <section id="pantalla_juego" class="">
     <div class="inicio">
         <div id="juego" class="juego">
-            <div id="cada_palabra" class="cada_palabra"></div>
+            <div id="caja_palabra" class="caja_palabra"></div>
+            <div id="boton_inicio" class="boton_inicio"><h2>INICIO</h2></div>
+            <div id="boton_derrota" class="boton_derrota"><h2>HAS PERDIDO</h2></div>
         </div>
         <div id="informacion_juego" class="informacion_juego">
             <div id="vidas" class="vidas"><span id="numero_vidas" class="numero_vidas">vidas=3</span> </div>
@@ -36,17 +25,6 @@
         </div>
         </div>
     </section>
-    <section id="pantalla_derrota  " class="">
-        <div class="inicio">
-            <div id="juego" class="juego">
-                <div id="cada_palabra" class="cada_palabra">DERROTA</div>
-            </div>
-            <div id="informacion_juego" class="informacion_juego">
-                <div id="vidas" class="vidas"><span id="numero_vidas" class="numero_vidas">vidas=3</span> </div>
-                <div id="texto" class="texto"></div>
-                <div class="puntos"><span id="puntos" class="puntos">puntos=0</span> </div>    
-            </div>
-            </div>
-        </section>
 </body>
+<script type="text/javascript" src="js/main.js"></script>
 </html>
