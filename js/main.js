@@ -146,6 +146,8 @@ function restarVidas() {
     } else {
         vidasExtra = vidasExtra - 1;
         vidasElemento.textContent = 'vidas=' + vidasExtra;
+        elegirPalabra();
+        cajaElemento.innerHTML = palabraActual.ingles;
     }
 }
 
