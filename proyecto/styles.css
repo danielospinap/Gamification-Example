@@ -1,0 +1,11 @@
+* {
+    color:white;
+}
+.inicio{
+    background-color: #040c1c;
+    padding: 1%;
+    width: 40%; 
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
