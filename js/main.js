@@ -74,6 +74,7 @@ function validarPalabra() {
     if (palabraEscrita === palabraActual.ingles) {
         agregarPuntos();
         cajaElemento.innerHTML = palabraActual.espanol;
+        cajaElemento.classList.add("heartBeat")
         palabraElemento.setAttribute('disabled', "true");
         clearInterval(intervalId);
 
@@ -87,6 +88,7 @@ function siguientePalabra( ){
     elegirPalabra();
     cajaElemento.innerHTML = palabraActual.ingles;
     cajaElemento.style.top = '0px';
+    cajaElemento.classList.remove("heartBeat")
     intervalId = window.setInterval(moverCaja, tiempoMovimiento);
     palabraElemento.removeAttribute('disabled')
     palabraElemento.value = "";
@@ -95,7 +97,7 @@ function siguientePalabra( ){
 
 function agregarPuntos() {
     puntos = puntos + palabraActual.puntos;
-    puntosElemento.textContent = 'puntos=' + puntos;
+    puntosElemento.textContent = 'Puntos = ' + puntos;
 }
 
 function empezarJuego() {
@@ -145,7 +147,7 @@ function restarVidas() {
         mostarLetreroPerder();
     } else {
         vidasExtra = vidasExtra - 1;
-        vidasElemento.textContent = 'vidas=' + vidasExtra;
+        vidasElemento.textContent = 'Vidas = ' + vidasExtra;
         elegirPalabra();
         cajaElemento.innerHTML = palabraActual.ingles;
     }
