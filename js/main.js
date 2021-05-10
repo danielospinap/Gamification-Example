@@ -104,9 +104,9 @@ function empezarJuego() {
     elegirPalabra();
     cajaElemento.innerHTML = palabraActual.ingles;
     vidasExtra = 3;
-    vidasElemento.textContent = 'vidas=' + vidasExtra;
+    vidasElemento.textContent = 'Vidas = ' + vidasExtra;
     puntos = 0;
-    puntosElemento.textContent = 'puntos=' + puntos;
+    puntosElemento.textContent = 'Puntos = ' + puntos;
     botonInicioElement.classList.add("oculto");
     botonDerrotaElement.classList.add("oculto");
     cajaElemento.classList.remove("oculto");

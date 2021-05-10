@@ -47,15 +47,16 @@
     
 .juego { 
     grid-area: 1 / 1 / 5 / 4; 
-    height: 700px;
+    height: 830px;
     border-bottom:12px solid #040c1c;
     background-color:#040c1c;
     background-image:url('../img/fondo.jpg');
     position: relative;
     }
 .informacion_juego { 
+    padding-top: 30px;
     grid-area: 5 / 1 / 6 / 4; 
-    height: 100px;
+    height: 70px;
     background-color: #040c1c;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
